@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/toastr.js"></script>
+  <script type="text/javascript" src="../js/index.js"></script>
+  <script type="text/javascript" src="../js/Game.js"></script>
+  <link rel='stylesheet' href="../css/toastr.css"/>
+  <link rel='stylesheet' href="../css/index.css"/>
+  <script>
+   </script>
+  <title>Title screen</title>
+</head>
+<body>
+  <div id='title'>
+    <img id="title_bg" class='container-center' src="../img/title_screen/title_screen_bg.png" />
+    <ul>
+      <li><img src="../img/title_screen/default_play.png"/></li>
+      <li><img src="../img/title_screen/default_control.png"/></li>
+      <li><img src="../img/title_screen/default_create.png"/></li>
+    </ul>
+  </div>
+  <div id="controls" class='container-center' hidden="hidden">
+    <img src="../img/title_screen/default_control.png"/>
+    <table id="control_container">
+      <!-- Player 1 -->
+      <tr><td colspan="3">Player 1 :</td></tr>
+      <tr class="player1"><td>Up: </td><td class="up" val='87'>W</td><td> Click to change</td></tr>
+      <tr class="player1"><td>Left: </td><td class="left" val='65'>A</td><td> Click to change</td></tr>
+      <tr class="player1"><td>Down: </td><td class="down" val='83'>S</td><td> Click to change</td></tr>
+      <tr class="player1"><td>Right: </td><td class="right" val='68'>D</td><td> Click to change</td></tr>
+      <tr class="player1"><td>Shoot: </td><td class="shoot" val='16'>ShiftLeft</td><td> Click to change</td></tr>
+      <!-- Player 2 -->
+      <tr><td colspan="3">Player 2 :</td></tr>
+      <tr class="player2"><td>Up: </td><td class="up" val='104'>Numpad 8</td><td> Click to change</td></tr>
+      <tr class="player2"><td>Left: </td><td class="left" val='100'>Numpad 4</td><td> Click to change</td></tr>
+      <tr class="player2"><td>Down: </td><td class="down" val='101'>Numpad 5</td><td> Click to change</td></tr>
+      <tr class="player2"><td>Right: </td><td class="right" val='102'>Numpad 6</td><td> Click to change</td></tr>
+      <tr class="player2"><td>Shoot: </td><td class="shoot" val='13'>Numpad Enter</td><td> Click to change</td></tr>
+    </table>
+    <span class="back_main_menu">Main Menu</span>
+  </div>
+  <div id="load" class="container-center"  hidden="hidden">
+    <span enabled="yes">Use default map</span>
+    <span enabled="no">Load Map</span>
+    <table id="savedMap"></table>
+    <span class="back_main_menu">Main Menu</span>
+  </div>
+</body>
+</html>

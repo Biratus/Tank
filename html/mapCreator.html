@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+  	<script src="../js/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/toastr.css">
+    <link rel="stylesheet" type="text/css" href="../css/mapCreator.css">
+  	<script src="../js/toastr.js"></script>
+    <script type="text/javascript" src="../js/mapCreator.js"></script>
+  	<title>Map Creator</title>
+</head>
+<body>
+	<canvas id="can" style="z-index:1" width="1000" height="600"></canvas>
+  <canvas id="creatorBg" style="z-index:0"width="1000" height="600"></canvas>
+	<button onclick="saveMap()">Save Map</button> <button onclick="clearMap()">Clear Map</button>
+  <span class="walls" id='solid' value="0" check="1">Solid Wall</span>
+  <span class="walls" id='destruct' value="1" check="0">Destructible Wall</span>
+	<span id="back_main_menu">Main Menu</span>
+</body>
+</html>

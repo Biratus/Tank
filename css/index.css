@@ -1,0 +1,139 @@
+@font-face {
+    font-family: main_font;
+    src:url('font/HelveticaRounded-Bold.woff') format("woff");
+}
+#title_bg {
+    z-index: -1;
+}
+#title li {
+    cursor:pointer;
+    list-style: none;
+    text-align: center;
+    margin-top: 1em;
+}
+body {
+    margin:0;
+    background-color: black;
+}
+#title {
+    position:absolute;
+    width:100%;
+    height:100%;
+}
+#title ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding:0;
+}
+#controls {
+    background:url('../img/default_bg.png');
+    font-family: main_font;
+    color:white;
+}
+.container-center {
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:1000px;
+    height: 600px;
+    margin-top: -300px;
+    margin-left:-500px;
+}
+#control_container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size:24px;
+    border-spacing:5px;
+    text-shadow: 1px 1px 2px black;
+}
+#control_container td[colspan="3"] {
+    font-size: 30px;
+}
+.player1 td:first-child,.player2 td:first-child {
+    text-align: right;
+    width:109px;
+}
+.player1 td:nth-child(2),.player2 td:nth-child(2) {
+    text-align: center;
+    width:190px;
+    border:2px solid white;
+    cursor:pointer;
+}
+#controls img{
+    margin-top:1px;
+    width:43%;
+}
+.back_main_menu {
+    cursor:pointer;
+    font-family: main_font;
+    border-radius: 10px;
+    border: 3px solid white;
+    padding: 3px 15px 3px 15px;
+    text-shadow: 1px 1px 2px black;
+    position: absolute;
+    top: 540px;
+    left: 150px;
+    width: 50px;
+    text-align: center;
+    font-size: 18px;
+}
+.back_main_menu:hover {
+    background-color:rgba(0,0,0,0.5);
+}
+#load {
+    background:url('../img/default_bg.png');
+    font-family: main_font;
+    color:white;
+}
+#load span[enabled] {
+    position:absolute;
+    top:50%;
+    margin-top:-50px;
+    left:52%;
+    width:400px;
+    line-height:100px;
+    font-size:48px;
+    text-align: center;
+    vertical-align: middle;
+}
+#load span[enabled='yes'] {
+    cursor:pointer;
+    border:3px solid white;
+    color:white;    
+}
+#load span:first-child {
+    margin-left:-420px;
+}
+#load span[enabled='yes']:hover {
+    background-color:rgba(0,0,0,0.6);
+}
+#load span[enabled='no'] {
+    border:3px solid black;
+    color:black;
+    cursor:default;
+}
+#load table {
+    position: absolute;
+    width: 856px;
+    margin: 4.5em;
+    border: 2px solid white;
+    border-spacing: 3em;
+    background: url('../img/default_bg.png');
+    height: 456px;
+}
+#load td {
+    display: inline-block;
+    margin-right: 1em;
+    width: 64px;
+    line-height: 64px;
+    text-align: center;
+    border: 3px solid white;
+    border-radius: 0.7em;
+    box-shadow: 0 0 10px 2px #1F1F1F;
+    font-size: 30px;
+    background: linear-gradient(#FDA461,#F86E06);
+    cursor:pointer;
+}
+

@@ -1,0 +1,60 @@
+@font-face {
+    font-family: main_font;
+    src:url('font/HelveticaRounded-Bold.woff') format(truetype);
+}
+canvas {
+    position:absolute;
+}
+#back_main_menu {
+    cursor:pointer;
+    font-family: main_font;
+    border-radius: 10px;
+    border: 3px solid white;
+    padding: 3px 15px 3px 15px;
+    text-shadow: 1px 1px 2px black;
+    position: absolute;
+    top: 540px;
+    left: 20px;
+    width: 50px;
+    text-align: center;
+    font-size: 18px;
+}
+body {
+	background-color:black;
+	color:white;
+}
+button:hover,#back_main_menu:hover{
+    background-color: rgba(255,140,0,0.6);
+}
+button {
+    cursor:pointer;
+    position:absolute;
+    top:50%;
+	background-color: black;
+    color: white;
+    font-family: main_font;
+    padding: 5px 20px;
+    margin-top: 10px;
+    border: 2px solid white;
+    display: block;
+    margin-left: 20px;
+}
+.walls {
+	cursor:pointer;
+	position:absolute;
+	top:3px;
+	width:200px;
+	left: 50%;
+	padding:5px 0;
+	font-family: main_font;
+	font-size:18px;
+	text-align:center;
+}
+.walls[check='0'] {
+	border:2px solid white;
+	color:white;
+}
+.walls[check='1']{
+	border:2px solid darkorange;
+	color:darkorange;
+}

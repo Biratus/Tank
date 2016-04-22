@@ -1,0 +1,55 @@
+@font-face {
+  font-family: main_font;
+  src:url('font/HelveticaRounded-Bold.woff') format(truetype);
+}
+#layer0,#layer1,#layer2,#layer-1 {
+  position:absolute;
+}
+body {
+  background-color:black; 
+}
+.container-center {
+  position:relative;
+  position:absolute;
+  top:50%;
+  left:50%;
+  width:1000px;
+  height: 600px;
+  margin-top: -300px;
+  margin-left:-500px;
+}
+.back_main_menu {
+  color:white;
+  cursor:pointer;
+  font-family: main_font;
+  border-radius: 10px;
+  border: 3px solid white;
+  padding: 3px 15px 3px 15px;
+  text-shadow: 1px 1px 2px black;
+  position: absolute;
+  top: 540px;
+  left: 20px;
+  width: 100px;
+  text-align: center;
+  font-size: 18px;
+}
+.back_main_menu:hover {
+  background-color:rgba(255,255,255,0.2);
+}
+#p1Life,#p2Life {
+  background-color: black;
+  position: absolute;
+  top: 5px;
+  width: 200px;
+  border: 2px solid white;
+  box-shadow: 0 0 7px 1px white;
+}
+#victory {
+  font-family:main_font;
+  padding-top:180px;
+  text-align: center;
+  font-size:100px;
+  color:rgb(32,186,120);
+  text-shadow: -3px -1px white,5px 0px black,3px -2px black,-4px -2.5px 1.5px black;
+  background-image:url("../img/victory.png");
+}

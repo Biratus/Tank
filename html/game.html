@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <link rel="stylesheet" href="../js/bootstrap-3.3.5-dist/css/bootstrap.min.css">
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/Tank.js"></script>
+  <script src="../js/Game.js"></script>
+  <script src="../js/Player.js"></script>
+  <script src="../js/gameHandler.js"></script>
+  <script type="text/javascript" src="../js/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../css/game.css"/>
+  <title>Game</title>
+</head>
+<body>
+  <div class="progress" id="p1Life"><div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"></div></div>
+  <div class="progress" id="p2Life"><div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"></div></div>
+  <div id="gameContainer" class="container-center">
+  <canvas id="layer-1" width="1000" height="600" style="z-index:-1"></canvas>
+  <canvas id="layer0" width="1000" height="600" style="z-index:0"></canvas>
+  <canvas id="layer1" width="1000" height="600" style="z-index:1"></canvas>
+  <canvas id="layer2" width="1000" height="600" style="z-index:2"></canvas>
+  </div>
+  <div id="victory" class="container-center" style="z-index:99" hidden="hidden"></div>
+  <span class="back_main_menu">Main Menu</span>
+</body>
+</html>
